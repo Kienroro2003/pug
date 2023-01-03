@@ -1,0 +1,13 @@
+doctype html
+html 
+    head 
+    body 
+        input(type="password" name="password" data-js=`${5 > 2 ? "ok" : "not"}`)
+        - const myClasses = ["class1", "class2", "class3"]
+        div.my-div(class=myClasses)
+
+        - const myStyles = {"color": "red", "background-color": "blue"}
+        div(style=myStyles)
+
+        - const myAttributes = {"src": "pictured.png", "alt": "This is a picture"}
+        img&attributes(myAttributes)
